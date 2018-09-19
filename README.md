@@ -23,7 +23,7 @@
      ...
 
      // AppSellMe SDK
-     implementation 'ru.appsellme:appsellme:1.0.0'
+     implementation 'ru.appsellme:appsellme:1.0.4'
    }
 ```
 
