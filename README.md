@@ -23,7 +23,7 @@
      ...
 
      // AppSellMe SDK
-     implementation 'ru.appsellme:appsellme:1.0.5'
+     implementation 'ru.appsellme:appsellme:1.0.6'
    }
 ```
 
@@ -93,6 +93,36 @@ or
                        @Override
                        public void onException(Exception e) {
                        
+                       }
+                   });
+```
+
+### 5. Sending an event with object:
+
+```
+   AdditionalInfo additionalInfo = new AdditionalInfo("Ivan", 22);
+   String json = new Gson().toJson(additionalInfo);
+
+   AppSellMe.sendEvent("event_name", json);
+```
+
+or
+
+```
+   AppSellMe.sendEvent("event_name", json, new ResponseStateListener() {
+                       @Override
+                       public void onSuccess() {
+
+                       }
+
+                       @Override
+                       public void onFailure() {
+
+                       }
+
+                       @Override
+                       public void onException(Exception e) {
+
                        }
                    });
 ```
