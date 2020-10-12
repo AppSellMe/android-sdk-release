@@ -1,7 +1,7 @@
 # Android AppSellMe SDK
 
 ## Requirements
-- minSdkVersion 15+
+- minSdkVersion 16+
 
 ## Getting Started
 
@@ -23,7 +23,7 @@
      ...
 
      // AppSellMe SDK
-     implementation 'ru.appsellme:appsellme:1.0.6'
+     implementation 'ru.appsellme:appsellme:1.0.8'
    }
 ```
 
